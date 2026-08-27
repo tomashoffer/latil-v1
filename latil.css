@@ -1,0 +1,87 @@
+/* Latil.io — global styles for the redesigned home.
+   Everything else lives as inline styles on the components; this file only holds
+   what inline styles cannot express: resets, keyframes and interactive states. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #0A0B10;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+* { box-sizing: border-box; }
+
+a { color: #A78BFA; text-decoration: none; }
+a:hover { color: #EDEEF2; }
+::selection { background: #7C3AED; color: #FFFFFF; }
+
+@keyframes latil-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.lt-marquee-track { animation: latil-marquee 34s linear infinite; }
+.lt-marquee:hover .lt-marquee-track { animation-play-state: paused; }
+
+.lt-btn-primary:hover { background: #8B5CF6 !important; color: #FFFFFF; }
+.lt-btn-ghost:hover { border-color: #EDEEF2 !important; background: rgba(237,238,242,0.05); }
+.lt-nav-link:hover { color: #EDEEF2; }
+.lt-menu-item:hover { background: rgba(167,139,250,0.07); }
+.lt-row:hover { background: rgba(167,139,250,0.04); }
+.lt-field:focus { border-color: #A78BFA !important; }
+.lt-icon:hover { border-color: #A78BFA; color: #EDEEF2; background: rgba(167,139,250,0.08); }
+
+/* Reveal on scroll. Elements render visible by default: the hook hides them only
+   when it is actually going to animate them, so captures, print and no-JS all work. */
+.lt-reveal { will-change: opacity, transform; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lt-marquee-track { animation: none; }
+}
+
+/* Responsive. Inline styles cannot express media queries, so the few rules that
+   change by viewport are keyed to data attributes on the affected nodes. */
+@media (max-width: 900px) {
+  [data-split] { grid-template-columns: 1fr !important; gap: 34px !important; }
+  [data-nav-center] { display: none !important; }
+  [data-burger] { display: grid !important; }
+  [data-lang] { display: none !important; }
+  [data-footer] { grid-template-columns: 1fr 1fr !important; gap: 36px !important; }
+  [data-rest-row] { grid-template-columns: 34px 1fr 24px !important; gap: 14px !important; }
+  [data-rest-micro] { display: none !important; }
+  [data-rest-detail] { grid-template-columns: 1fr !important; }
+  [data-rest-detail] > span:first-child { display: none !important; }
+  header .lt-btn-primary {
+    padding: 9px 14px !important;
+    font-size: 12px !important;
+    border-radius: 9px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  /* the map moves below the headline, so the fade has to run vertically */
+  [data-hero-overlay] { background: linear-gradient(180deg, rgba(10,11,16,0.97) 0%, rgba(10,11,16,0.9) 42%, rgba(10,11,16,0.55) 100%) !important; }
+  [data-contact-icon] { width: 44px !important; height: 44px !important; }
+  [data-rest-row] { padding-top: 20px !important; padding-bottom: 20px !important; }
+}
+
+@media (max-width: 700px) {
+  section { padding-left: 20px !important; padding-right: 20px !important; }
+  footer { padding-left: 20px !important; padding-right: 20px !important; }
+  [data-hero] { padding-top: 110px !important; padding-bottom: 60px !important; min-height: 0 !important; }
+  [data-sec] { padding-top: 80px !important; padding-bottom: 80px !important; }
+  [data-footer] { grid-template-columns: 1fr !important; }
+  [data-panel-row] { grid-template-columns: 1fr auto !important; }
+  [data-metrics] { gap: 26px !important; }
+  [data-team] { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important; gap: 20px !important; }
+  [data-hero-cta] { flex-direction: column !important; align-items: stretch !important; }
+  [data-hero-cta] > a { text-align: center !important; }
+}
