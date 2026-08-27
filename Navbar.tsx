@@ -94,6 +94,7 @@ export default function Navbar({
   return (
     <header
       ref={headerRef}
+      data-mobile-header
       style={{
         transition: "transform 320ms cubic-bezier(.2,.7,.2,1), opacity 240ms linear",
         position: "fixed",
