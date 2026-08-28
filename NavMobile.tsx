@@ -153,6 +153,9 @@ export default function NavMobile({
             backdropFilter: "blur(18px)",
             padding: "14px 12px 12px",
             boxShadow: "0 18px 42px rgba(0,0,0,0.2)",
+            maxHeight: "calc(100vh - 96px)",
+            overflowY: "auto",
+            WebkitOverflowScrolling: "touch",
           }}
         >
           <div style={{ display: "grid", gap: 12 }}>
