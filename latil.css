@@ -47,67 +47,14 @@ a:hover { color: #EDEEF2; }
   .lt-marquee-track { animation: none; }
 }
 
-/* Responsive. Inline styles cannot express media queries, so the few rules that
-   change by viewport are keyed to data attributes on the affected nodes. */
+[data-nav-mobile] { display: none !important; }
+
 @media (max-width: 900px) {
+  [data-nav-mobile] { display: block !important; }
   [data-split] { grid-template-columns: 1fr !important; gap: 34px !important; }
   [data-nav-center] { display: none !important; }
   [data-lang] { display: none !important; }
-
-  header[data-mobile-header] {
-    grid-template-columns: auto minmax(0, 1fr) auto !important;
-    gap: 10px !important;
-    padding: 10px 12px !important;
-    left: 12px !important;
-    right: 12px !important;
-  }
-
-  header[data-mobile-header] > div:first-child {
-    display: flex !important;
-    justify-content: flex-start !important;
-    min-width: 0 !important;
-  }
-
-  header[data-mobile-header] > div:first-child a {
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  header[data-mobile-header] > div:first-child img {
-    height: 24px !important;
-    max-width: 108px !important;
-    width: auto !important;
-  }
-
-  header[data-mobile-header] > div:last-child {
-    justify-self: stretch !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    gap: 10px !important;
-  }
-
-  header[data-mobile-header] .lt-btn-primary {
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    min-width: 0 !important;
-    width: min(100%, 180px) !important;
-    padding: 10px 12px !important;
-    font-size: 12.5px !important;
-    border-radius: 10px !important;
-    white-space: nowrap !important;
-    margin: 0 auto !important;
-  }
-
-  header[data-mobile-header] [data-burger] {
-    display: grid !important;
-    width: 42px !important;
-    height: 42px !important;
-    flex-shrink: 0 !important;
-    margin-left: auto !important;
-  }
+  header[data-mobile-header] { display: none !important; }
 
   [data-footer] { grid-template-columns: 1fr 1fr !important; gap: 36px !important; }
   [data-rest-row] { grid-template-columns: 34px 1fr 24px !important; gap: 14px !important; }

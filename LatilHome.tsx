@@ -2,6 +2,7 @@
 
 import HeroMap from "./HeroMap";
 import Navbar from "./Navbar";
+import NavMobile from "./NavMobile";
 import PortfolioList from "./PortfolioList";
 import ContactForm from "./ContactForm";
 import TeamContact from "./TeamContact";
@@ -50,6 +51,7 @@ export default function LatilHome() {
   return (
     <div id="top" style={{ background: C.bg, color: C.text, fontFamily: SANS, overflowX: "hidden" }}>
       <Navbar t={t} lang={lang} setLang={setLang} onNavigate={navigate} />
+      <NavMobile t={t} lang={lang} setLang={setLang} onNavigate={navigate} />
 
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section
