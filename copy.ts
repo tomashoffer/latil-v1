@@ -7,7 +7,7 @@ export type Lang = "es" | "en";
 
 export const COPY = {
   es: {
-    nav: { solutions: "Soluciones", about: "Nosotros", contact: "Contacto", cta: "Agendar reunión" },
+    nav: { solutions: "Soluciones", how: "Cómo trabajamos", about: "Nosotros", contact: "Contacto", cta: "Agendar reunión" },
     menu: [
       { label: "Cloud y gasto en IA", items: [
         { name: "FinOps Optimization", micro: "Gobierno del costo cloud que ejecuta" },
@@ -55,11 +55,12 @@ export const COPY = {
     how: {
       label: "Cómo trabajamos",
       title: "No reemplazamos tus sistemas. Hacemos que ejecuten.",
+      step: "Paso",
       items: [
-        { num: "01", title: "Diagnóstico sobre tus propios datos", body: "Dos semanas sobre tu facturación y tus procesos reales. Sin acceso a producción." },
-        { num: "02", title: "Integración sobre lo que ya tenés", body: "ERP, CRM, cuentas cloud y cámaras existentes. Sin migraciones ni hardware nuevo." },
-        { num: "03", title: "Gobierno y traza completa", body: "Cada acción automática queda auditada, con aprobación humana donde importa." },
-        { num: "04", title: "Transferencia a tu equipo", body: "El resultado lo opera tu gente, no nosotros. Salimos cuando ya no hacemos falta." }
+        { num: "01", title: "Nos juntamos y exploramos tus dolores", body: "Nos sentamos con tu equipo para entender dónde está la fricción real, no la que se supone." },
+        { num: "02", title: "Aplicamos las mejores herramientas", body: "Elegimos entre un ecosistema probado la solución que resuelve tu problema puntual, sin forzar un producto único." },
+        { num: "03", title: "Acompañamos con soporte y servicios profesionales", body: "Durante todo el proceso, no solo en el arranque. Implementación, ajuste y soporte de la mano de nuestro equipo." },
+        { num: "04", title: "Ahorros y eficiencia medibles", body: "El resultado se ve en números: ahorro financiero y operativo, optimización y eficiencia en tu operación." }
       ]
     },
     team: {
@@ -189,7 +190,7 @@ export const COPY = {
   },
 
   en: {
-    nav: { solutions: "Solutions", about: "About", contact: "Contact", cta: "Book a meeting" },
+    nav: { solutions: "Solutions", how: "How we work", about: "About", contact: "Contact", cta: "Book a meeting" },
     menu: [
       { label: "Cloud & AI spend", items: [
         { name: "FinOps Optimization", micro: "Cloud cost governance that executes" },
@@ -237,11 +238,12 @@ export const COPY = {
     how: {
       label: "How we work",
       title: "We don't replace your systems. We make them execute.",
+      step: "Step",
       items: [
-        { num: "01", title: "Diagnosis on your own data", body: "Two weeks over your real billing and processes. No production access required." },
-        { num: "02", title: "Integration on what you already run", body: "ERP, CRM, cloud accounts and existing cameras. No migrations, no new hardware." },
-        { num: "03", title: "Governance and a full trail", body: "Every automated action is audited, with human approval wherever it matters." },
-        { num: "04", title: "Handover to your team", body: "Your people operate the result, not us. We leave when we are no longer needed." }
+        { num: "01", title: "We meet you and explore your pain points", body: "We sit with your team to understand where the real friction is, not the assumed one." },
+        { num: "02", title: "We bring the best tools for the job", body: "We pick from a proven ecosystem the solution that fits your specific problem, no forced one-size-fits-all product." },
+        { num: "03", title: "We stay with support and professional services", body: "Through the whole process, not just the kickoff. Implementation, tuning and support from our own team." },
+        { num: "04", title: "Measurable savings and efficiency", body: "The result shows up in numbers: financial and operational savings, optimization and efficiency across your operation." }
       ]
     },
     team: {

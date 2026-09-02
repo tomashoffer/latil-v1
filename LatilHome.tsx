@@ -9,6 +9,7 @@ import TeamContact from "./TeamContact";
 import { useState } from "react";
 import { useLang } from "./useLang";
 import { useReveal } from "./useReveal";
+import HowSteps from "./HowSteps";
 import {
   C,
   CONTACT_EMAIL,
@@ -17,20 +18,13 @@ import {
   scrollToId,
   LINKEDIN_COMPANY,
   MONO,
+  monoLabel,
   PARTNERS,
   SANS,
   TEAM_PROFILES,
 } from "./data";
 import { SOLUTION_NAMES } from "./copy";
 import "./latil.css";
-
-const monoLabel = (size = 13, color: string = C.mono): React.CSSProperties => ({
-  fontFamily: MONO,
-  fontSize: size,
-  letterSpacing: "0.14em",
-  color,
-  textTransform: "uppercase",
-});
 
 export default function LatilHome() {
   const { lang, setLang, t } = useLang("es");
@@ -260,37 +254,7 @@ export default function LatilHome() {
       </section>
 
       {/* ── How we work ──────────────────────────────────────── */}
-      <section data-sec style={{ padding: "140px 40px", borderBottom: `1px solid ${C.line}`, background: C.bgAlt }}>
-        <div style={{ maxWidth: 1240, margin: "0 auto", display: "grid", gap: 80 }}>
-          <div data-reveal style={{ display: "grid", gap: 20, maxWidth: 780 }}>
-            <span style={monoLabel(13)}>{t.how.label}</span>
-            <h2 style={{ margin: 0, fontSize: "clamp(30px, 3.6vw, 50px)", lineHeight: 1.05, letterSpacing: "-0.03em", fontWeight: 500 }}>{t.how.title}</h2>
-          </div>
-          {/* hairlines drawn per card: a tinted container with 1px gaps leaves grey
-              blocks wherever the row is not full */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
-            {t.how.items.map((d) => (
-              <div
-                key={d.num}
-                data-reveal
-                style={{
-                  background: C.bgAlt,
-                  padding: "34px 30px 40px",
-                  borderTop: "1px solid rgba(237,238,242,0.12)",
-                  borderLeft: "1px solid rgba(237,238,242,0.12)",
-                  display: "grid",
-                  gap: 12,
-                  alignContent: "start",
-                }}
-              >
-                <span style={{ fontFamily: MONO, fontSize: 12, color: C.accentLight }}>{d.num}</span>
-                <span style={{ fontSize: 19, letterSpacing: "-0.015em" }}>{d.title}</span>
-                <span style={{ fontSize: 14.5, lineHeight: 1.55, color: C.muted }}>{d.body}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HowSteps t={t} />
 
       {/* ── Team ─────────────────────────────────────────────── */}
       <section id="team" data-sec style={{ padding: "140px 40px", borderBottom: `1px solid ${C.line}` }}>

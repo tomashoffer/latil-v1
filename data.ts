@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 export const C = {
   bg: "#0A0B10",
   bgAlt: "#0E1017",
@@ -18,6 +20,14 @@ export const C = {
 
 export const MONO = "'JetBrains Mono', ui-monospace, monospace";
 export const SANS = "Archivo, Helvetica, sans-serif";
+
+export const monoLabel = (size = 13, color: string = C.mono): CSSProperties => ({
+  fontFamily: MONO,
+  fontSize: size,
+  letterSpacing: "0.14em",
+  color,
+  textTransform: "uppercase",
+});
 
 export const CONTACT_EMAIL = "contact@latil.com";
 export const LINKEDIN_COMPANY = "https://www.linkedin.com/company/latil-io/";
