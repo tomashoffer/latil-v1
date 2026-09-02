@@ -176,6 +176,7 @@ export default function Navbar({
           )}
         </span>
 
+        <a onClick={() => jump("how")} className="lt-nav-link" style={{ color: C.text3, cursor: "pointer" }}>{t.nav.how}</a>
         <a onClick={() => jump("team")} className="lt-nav-link" style={{ color: C.text3, cursor: "pointer" }}>{t.nav.about}</a>
         <a onClick={() => jump("contact")} className="lt-nav-link" style={{ color: C.text3, cursor: "pointer" }}>{t.nav.contact}</a>
       </nav>
@@ -315,6 +316,9 @@ export default function Navbar({
           ))}
 
           <div style={{ display: "grid", gap: 4, paddingTop: 22, borderTop: `1px solid ${C.line}` }}>
+            <a onClick={() => jump("how")} className="lt-menu-item" style={{ padding: "11px 10px", marginLeft: -10, borderRadius: 10, fontSize: 15, color: C.text, cursor: "pointer" }}>
+              {t.nav.how}
+            </a>
             <a onClick={() => jump("team")} className="lt-menu-item" style={{ padding: "11px 10px", marginLeft: -10, borderRadius: 10, fontSize: 15, color: C.text, cursor: "pointer" }}>
               {t.nav.about}
             </a>

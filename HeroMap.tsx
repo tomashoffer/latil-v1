@@ -87,10 +87,10 @@ export default function HeroMap() {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       const narrow = w < 760;
-      const gx = narrow ? w * 0.04 : w * 0.3;
-      const gw = narrow ? w * 0.92 : w * 0.72;
-      const gh = Math.min(narrow ? h * 0.34 : h * 0.74, gw * 0.46);
-      const gy = narrow ? h * 0.72 - gh / 2 : h * 0.5 - gh / 2;
+      const gx = narrow ? w * 0.02 : w * 0.3;
+      const gw = narrow ? w * 0.96 : w * 0.72;
+      const gh = Math.min(narrow ? h * 0.46 : h * 0.74, gw * (narrow ? 0.62 : 0.46));
+      const gy = narrow ? h * 0.56 - gh / 2 : h * 0.5 - gh / 2;
 
       const targets = landTargets(gx, gy, gw, gh);
       if (targets.length) {
