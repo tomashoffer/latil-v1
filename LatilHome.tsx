@@ -264,7 +264,7 @@ export default function LatilHome() {
             <h2 style={{ margin: 0, fontSize: "clamp(30px, 3.6vw, 50px)", lineHeight: 1.05, letterSpacing: "-0.03em", fontWeight: 500 }}>{t.team.title}</h2>
             <p style={{ margin: 0, fontSize: 18, lineHeight: 1.5, color: C.text2, maxWidth: 640 }}>{t.team.lead}</p>
           </div>
-          <div data-reveal data-team style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))", gap: 28, justifyItems: "center" }}>
+          <div data-reveal data-team style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 28, justifyItems: "center", width: "100%", maxWidth: 820, marginInline: "auto" }}>
             {TEAM_PROFILES.map((m, i) => (
               <div
                 key={m.name}

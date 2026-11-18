@@ -54,6 +54,7 @@ export const TEAM_PROFILES = [
   { name: "Nicolas Surijón", photo: "/team/nico.jpeg", email: "nicolas@latil.io", linkedin: "https://www.linkedin.com/in/nsurijon/" },
   { name: "Betzalel Kenigsztein", photo: "/team/betzalel.png", email: "contact@latil.io", linkedin: "https://www.linkedin.com/in/betzalel-kenigsztein/" },
   { name: "Karen Schlaien", photo: "/team/karen.jpg", email: "karen@latil.io", linkedin: "https://www.linkedin.com/in/karenschlaien/" },
+  { name: "Matías Dajcz", photo: "/team/matias.jpg", email: "matias@latil.io", linkedin: "https://www.linkedin.com/in/mat%C3%ADas-dajcz-2031603/" },
 ];
 
 /** [lon, lat] of the delivery hubs drawn on the hero map. */
