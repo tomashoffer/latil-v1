@@ -264,7 +264,7 @@ export default function LatilHome() {
             <h2 style={{ margin: 0, fontSize: "clamp(30px, 3.6vw, 50px)", lineHeight: 1.05, letterSpacing: "-0.03em", fontWeight: 500 }}>{t.team.title}</h2>
             <p style={{ margin: 0, fontSize: 18, lineHeight: 1.5, color: C.text2, maxWidth: 640 }}>{t.team.lead}</p>
           </div>
-          <div data-reveal data-team style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 28, justifyItems: "center", width: "100%", maxWidth: 820, marginInline: "auto" }}>
+          <div data-reveal data-team style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "44px 52px", justifyItems: "center", width: "100%", maxWidth: 1040, marginInline: "auto" }}>
             {TEAM_PROFILES.map((m, i) => (
               <div
                 key={m.name}
@@ -278,7 +278,7 @@ export default function LatilHome() {
                   justifySelf: "center",
                 }}
               >
-                <div style={{ aspectRatio: "4 / 5", background: C.frame, border: "1px solid rgba(237,238,242,0.08)", overflow: "hidden", width: "100%" }}>
+                <div style={{ aspectRatio: "4 / 5", background: C.frame, border: "1px solid rgba(237,238,242,0.08)", borderRadius: 16, overflow: "hidden", width: "100%" }}>
                   <div
                     role="img"
                     aria-label={m.name}
