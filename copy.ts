@@ -67,13 +67,14 @@ export const COPY = {
       label: "Con quiénes vas a trabajar",
       title: "Construido por gente que operó esto a escala.",
       lead: "Ingenieros senior, product managers y practicantes de FinOps. Los mismos de la primera llamada son los que están en producción.",
-      roles: ["CEO y fundador", "COO y cofundador", "CSO y socio", "Global Head of Client Partnerships", "Head of Strategic Partnerships & Innovation"],
+      roles: ["CEO y fundador", "COO y cofundador", "CSO y socio", "Global Head of Client Partnerships", "Head of Strategic Partnerships & Innovation", "Head of Growth"],
       bios: [
         "Lidera la visión y la estrategia de Latil, construyendo partnerships con soluciones de IA de clase mundial para que las empresas escalen su operación.",
         "Conduce operaciones, go-to-market y customer success. Background en operaciones y tecnología, enfocado en escalar automatización empresarial.",
         "Más de 15 años como CEO, CFO y director de transformación digital en el sector público, con foco en operaciones de negocio e innovación a escala.",
         "Más de 30 años de liderazgo ejecutivo en telecomunicaciones, incluyendo CEO de Cable & Wireless Panamá.",
-        "Lidera alianzas en EMEA y LATAM, conectando startups con organizaciones tecnológicas globales."
+        "Lidera alianzas en EMEA y LATAM, conectando startups con organizaciones tecnológicas globales.",
+        "Casi 30 años en servicios financieros y fintech. Ex Chief Investment Officer y Chief Revenue Officer de Ripio, y antes Head of Market Risk en ICBC, Standard Bank e ING."
       ]
     },
     contact: {
@@ -250,13 +251,14 @@ export const COPY = {
       label: "Who you'll be working with",
       title: "Built by people who have run these operations at scale.",
       lead: "Senior engineers, product managers and FinOps practitioners. The same people in the first call are the ones in production.",
-      roles: ["CEO & Founder", "COO & Co-Founder", "CSO & Partner", "Global Head of Client Partnerships", "Head of Strategic Partnerships & Innovation"],
+      roles: ["CEO & Founder", "COO & Co-Founder", "CSO & Partner", "Global Head of Client Partnerships", "Head of Strategic Partnerships & Innovation", "Head of Growth"],
       bios: [
         "Leads Latil's vision and strategy, building partnerships with world-class AI solutions so enterprises can scale their operations.",
         "Runs operations, go-to-market and customer success. A background in operations and technology, focused on scaling enterprise automation.",
         "15+ years as CEO, CFO and director of digital transformation in the public sector, with deep expertise in business operations and innovation at scale.",
         "30+ years of executive leadership in telecom, including CEO of Cable & Wireless Panamá.",
-        "Leads alliances across EMEA and LATAM, connecting startups with global technology organisations."
+        "Leads alliances across EMEA and LATAM, connecting startups with global technology organisations.",
+        "Nearly 30 years in financial services and fintech. Former Chief Investment Officer and Chief Revenue Officer at Ripio, previously Head of Market Risk at ICBC, Standard Bank and ING."
       ]
     },
     contact: {
